@@ -8,33 +8,35 @@
     <link rel="icon" href="./Normal Button/Tertiary/Icons/web.png">
     <title>Portfolio Skeleton</title>
     <script src="https://kit.fontawesome.com/5211805414.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <ul class="ulMenu">
-                <li><a href=""><img src="./Normal Button/Tertiary/Icons/logo3.png" alt="My-Logo"></a></li>
+    <header class="fixed-top">
+        <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-light justify-content-end" id="nav-bar2">
+            <ul class="ulMenu nav nav-pills">
+                <li class="nav-item"><a href="" class="nav-link"><img src="./Normal Button/Tertiary/Icons/logo3.png" alt="My-Logo" width="30" height="30"></a></li>
             </ul>
-            <ul class="menuHiden">
-                <li><a href="#works-container">Portfolio</a></li>
-                <li><a href="#about-myself">About</a></li>
-                <li><a href="#form-container">Contact</a></li>
-                <li><a href=""><img src="./Normal Button/Icon - Mail.png" alt="Icon Mail"></a></li>
+            <ul class="menuHiden nav nav-pills">
+                <li class="nav-item" data-bs-spy="scroll"><a href="#works-container" class="nav-link">Portfolio</a></li>
+                <li class="nav-item" data-bs-spy="scroll"><a href="#about-myself" class="nav-link">About</a></li>
+                <li class="nav-item" data-bs-spy="scroll"><a href="#form-container" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><img src="./Normal Button/Icon - Mail.png" alt="Icon Mail"></a></li>
             </ul>
             <span class="menu-icon"><i class="fa-solid fa-bars icons"></i></span>
         </nav>
     </header>
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#nav-bar2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <section id="headline">
             <div>
                 <h1>Hey There. I'm Manuel.</h1>
                 <h3>I'm a Software Developer.</h3>
                 <p>I'm doing my best to improve my habilities in building responsive web design projects. Any comment of this template is welcome.</p>
             </div>
-            <ul class="icons">
-                <li><a href="https://github.com/Luffytaro22" target="_blank" rel="noopener"><img src="./Normal Button/github.png" alt="Github-Icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/" target="_blank" rel="noopener"><img src="./Normal Button/Icon - Linkedin.png" alt="Linkedin-Icon"></a></li>
-                <li><a href="https://twitter.com/Luffytaro_san22" target="_blank" rel="noopener"><img src="./Normal Button/twitter.png" alt="Twitter-Icon"></a></li>
+            <ul class="icons nav flex-sm-column">
+                <li class="nav-item"><a href="https://github.com/Luffytaro22" target="_blank" rel="noopener"><img src="./Normal Button/github.png" alt="Github-Icon"></a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/" target="_blank" rel="noopener"><img src="./Normal Button/Icon - Linkedin.png" alt="Linkedin-Icon"></a></li>
+                <li class="nav-item"><a href="https://twitter.com/Luffytaro_san22" target="_blank" rel="noopener"><img src="./Normal Button/twitter.png" alt="Twitter-Icon"></a></li>
             </ul>
         </section>
         <section id="works">
@@ -47,74 +49,74 @@
                 <div>
                     <h3>Multi-Post Stories</h3>
                     <p>A daily selections of privately personalized reads; no accounts or sign-ups required. Take your time and see the cool works I've done.</p>
-                    <ul class="languages">
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Javascript</li>
+                    <ul class="languages nav">
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href=""><button type="button">See project</button></a>
+                    <a href=""><button type="button" class="btn btn-primary">See project</button></a>
                 </div>
             </div>
             <div class="works-container" id="works-container">
-                <div class="works">
-                    <h2>Calculator</h2>
-                    <p>A simple calculator that can do the basics operations.</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Calculator</h2>
+                    <p class="card-text">A simple calculator that can do the basics operations.</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
-                <div class="works">
-                    <h2>Etch-A-Sketch</h2>
-                    <p>A recreation of the Etch-A-Sketch interactive dashboard where you can select the quantity of spaces and the colors.</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Etch-A-Sketch</h2>
+                    <p class="card-text">A recreation of the Etch-A-Sketch interactive dashboard where you can select the quantity of spaces and the colors.</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Etch-A-Sketch/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Etch-A-Sketch/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
-                <div class="works">
-                    <h2>Rock-Paper-Scissors</h2>
-                    <p>The global-popular game against the computer. Will you be winner or the losser? Try it out!</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Rock-Paper-Scissors</h2>
+                    <p class="card-text">The global-popular game against the computer. Will you be winner or the losser? Try it out!</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Rock-Paper-Scissors/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Rock-Paper-Scissors/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
-                <div class="works">
-                    <h2>Calculator</h2>
-                    <p>A simple calculator that can do the basics operations.</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Calculator</h2>
+                    <p class="card-text">A simple calculator that can do the basics operations.</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
-                <div class="works">
-                    <h2>Calculator</h2>
-                    <p>A simple calculator that can do the basics operations.</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Calculator</h2>
+                    <p class="card-text">A simple calculator that can do the basics operations.</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
-                <div class="works">
-                    <h2>Calculator</h2>
-                    <p>A simple calculator that can do the basics operations.</p>
-                    <ul class="lw languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                <div class="works card card-body">
+                    <h2 class="card-title">Calculator</h2>
+                    <p class="card-text">A simple calculator that can do the basics operations.</p>
+                    <ul class="lw languages nav">
+                        <li class="badge bg-success">HTML</li>
+                        <li class="badge bg-success">CSS</li>
+                        <li class="badge bg-success">Javascript</li>
                     </ul>
-                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide"><button type="button">See project</button></a>
+                    <a href="https://luffytaro22.github.io/Calculator/" target="_blank" rel="noopener" class="hide btn btn-primary"><button type="button" class="btn text-white">See project</button></a>
                 </div>
             </div>
         </section>
@@ -123,12 +125,12 @@
                 <h1>About me</h1>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             </div>
-            <a href=""><button>Get my resume</button></a>
+            <a href=""><button class="btn btn-primary">Get my resume</button></a>
             <hr>
             <div class="container2">
                 <div class="sub-container2">
                     <span><i class="fa-sharp fa-solid fa-square first"></i><label for="ul">Language</label></span>
-                    <ul>
+                    <ul class="nav flex-column">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
@@ -137,7 +139,7 @@
                 <br>
                 <div class="sub-container2">
                     <span><i class="fa-sharp fa-solid fa-square"></i><label for="ul">Frameworks</label></span>
-                    <ul>
+                    <ul class="nav flex-column">
                         <li>React.js</li>
                         <li>Ruby on Rails</li>
                         <li>Rspec</li>
@@ -146,7 +148,7 @@
                 <br>
                 <div class="sub-container2">
                     <span><i class="fa-solid fa-circle"></i><label for="ul">Skills</label></span>
-                    <ul>
+                    <ul class="nav flex-column">
                         <li>Database Management</li>
                         <li>Version Control</li>
                         <li>Web Development</li>
@@ -159,25 +161,25 @@
                 <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
             </div>
             <form action="https://formspree.io/f/xknaybwq" method="post">
-                <ul>
+                <ul class="nav flex-column form-control">
                     <li>
-                        <input  name="name" type="text" placeholder="Full name" maxlength="30" required>           
+                        <input  name="name" type="text" placeholder="Full name" maxlength="30" required class="form-control">           
                     </li>
                     <li>
-                        <input name="email"  type="email" placeholder="Email address" required>           
+                        <input name="email"  type="email" placeholder="Email address" required class="form-control">           
                     </li>
                     <li>
-                        <textarea name="text" id="" maxlength="500" required placeholder="Write me something..."></textarea>
+                        <textarea name="text" id="" maxlength="500" required placeholder="Write me something..." class="form-control"></textarea>
                     </li>
                     <li>
-                        <button type="submit"> Get in touch</button>
+                        <button type="submit" class="btn btn-primary"> Get in touch</button>
                     </li>
                 </ul>
             </form>
          </section>
     </main>
     <footer id="social-media">
-        <ul class="icons-footer">
+        <ul class="icons-footer nav">
             <li><a href="https://github.com/Luffytaro22" target="_blank" rel="noopener"><img src="./Normal Button/Tertiary/Icon -GitHub.png" alt="Github-Icon"></a></li>
             <li><a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/" target="_blank" rel="noopener"><img src="./Normal Button/Tertiary/Icon - Linkedin.png" alt="Linkedin-Icon"></a></li>
             <li><a href="https://twitter.com/Luffytaro_san22" target="_blank" rel="noopener"><img src="./Normal Button/Tertiary/Icon - Twitter.png" alt="Twitter-Icon"></a></li>
